@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/VCach333/candidates_api/issues"
   },
-  "homepage": "https://github.com/VCach333/candidates_api#readme"
+  "homepage": "https://github.com/VCach333/candidates_api#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.2"
+  }
 }

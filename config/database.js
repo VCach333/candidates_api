@@ -6,7 +6,7 @@ async function connectDatabase() {
 
 		const mongo_uri = process.env.PORT ? 'mongodb+srv://alphaavatarvladmircach:112358@cluster0.06hvb3w.mongodb.net/zeno_cand_gest' : 'mongodb://localhost/zeno_cand_gest'
 
-		await mongoose.connect(mongo_uri, { useNewUrlParser: true, useUnifiedTopology: true })
+		await mongoose.connect(mongo_uri)
 
 		console.log('MongoDB Connected')
 
