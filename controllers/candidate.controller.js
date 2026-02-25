@@ -5,6 +5,7 @@ async function create(req, res, next) {
 	try {
 
 		const candidate = await candidateService.create(req.body)
+		console.log('from controller', req.body)
 		res.status(201).json({
 			success: true,
 			data: candidate

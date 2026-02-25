@@ -7,6 +7,8 @@ async function create(data) {
 		/* validation */
 		if(!data.name || !data.tel || !data.email || !data.position) {
 
+			console.log(data)
+
 			const err = new Error('Preencha devidamente os Campos')
 			err.status = 400
 			throw err
@@ -22,7 +24,7 @@ async function findAll() {
 
 	try {
 
-		const candidates = await Candidate.find()
+		const candidates = await Candidate.find().sort({create: 'desc'})
 		return candidates
 
 	} catch (err) { console.log(err) }

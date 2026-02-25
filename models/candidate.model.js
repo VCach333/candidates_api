@@ -18,7 +18,8 @@ const candidateSchema = new mongoose.Schema({
 	},
 	position: {
 		type: String,
-		required: true
+		required: true,
+		enum: ['Administração', 'Recursos Humanos', 'Serviços Gerais', 'Tecnologia de Informação']
 	},
 	create: {
 		type: Date,
