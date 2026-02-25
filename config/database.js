@@ -14,3 +14,12 @@ async function connectDatabase() {
 }
 
 module.exports = connectDatabase
+
+/*
+	to connect the atlas cli
+
+        mongosh "mongodb+srv://cluster0.06hvb3w.mongodb.net/" --apiVersion 1 --username alphaavatarvladmircach
+
+        pwd: 112358
+
+*/
