@@ -1,0 +1,24 @@
+{
+  "name": "candidates-api",
+  "version": "1.0.0",
+  "description": "API para Sistema de Gestão de Candidaturas",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VCach333/candidates_api.git"
+  },
+  "keywords": [
+    "api",
+    "gest",
+    "candidates"
+  ],
+  "author": "VCach333",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VCach333/candidates_api/issues"
+  },
+  "homepage": "https://github.com/VCach333/candidates_api#readme"
+}
