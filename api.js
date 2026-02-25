@@ -1,7 +1,13 @@
 const express = require('express')
 const cors = require('cors')
 
+/* files import */
+const connectDatabase = require('./config/database.js')
+
 const api = express()
+
+/* MongoDB conx */
+connectDatabase()
 
 api.use(express.json())
 api.use(cors())
