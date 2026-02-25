@@ -13,4 +13,17 @@ async function create(req, res, next) {
 	} catch (err) { next(err) }
 }
 
-module.exports = { create }
+async function findAll(req, res, next) {
+
+	try {
+
+		const candidates = await candidateService.findAll()
+		res.status(200).json({
+			success: true,
+			data: candidates
+		})
+
+	} catch (err) { next(err) }
+}
+
+module.exports = { create, findAll }
