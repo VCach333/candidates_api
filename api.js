@@ -3,6 +3,7 @@ const cors = require('cors')
 
 /* files import */
 const connectDatabase = require('./config/database.js')
+const candidateRoutes = require('./routes/candidate.route')
 
 const api = express()
 
@@ -12,6 +13,7 @@ connectDatabase()
 api.use(express.json())
 api.use(cors())
 
+api.use('/candidates', candidateRoutes)
 
 const PORT = process.env.PORT || 4000
 api.listen(PORT, () => { console.log(`API Fly: localhost:${PORT}`) })
